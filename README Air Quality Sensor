@@ -1,0 +1,31 @@
+Smart Air Quality Sensor
+This project is a Smart Air Quality Monitoring System that measures environmental parameters like CO₂, temperature, and humidity
+
+
+Features
+Monitors air quality using sensors like MQ135, PMS5003, or SDS011
+Reads temperature & humidity with DHT22/BME280
+Displays data on OLED/LCD screen
+Sends data to the cloud via Wi-Fi (e.g., MQTT, HTTP)
+Provides visual alerts for poor air quality
+
+Hardware Requirements
+Microcontroller (e.g., ESP32, ESP8266, Arduino Uno, or Raspberry Pi)
+Air Quality Sensor (e.g., PMS5003, MQ135, SDS011)
+Temperature & Humidity Sensor (e.g., DHT22, BME280)
+Display (e.g., OLED SSD1306, LCD 16x2)
+Power supply
+Jumper wires and breadboard or PCB
+
+Software Requirements
+Arduino IDE / PlatformIO / Python (based on platform)
+Required Libraries:
+For Arduino: Adafruit_Sensor, DHT, MQUnifiedsensor, WiFi, PubSubClient, Adafruit_GFX, Adafruit_SSD1306
+For Python: Adafruit_DHT, pms5003, RPi.GPIO, requests, etc.
+
+Data Output
+Real-time readings of:
+PM2.5 / PM10 (µg/m³)
+CO₂ (ppm)
+Temperature (°C)
+Humidity (%)
